@@ -4,8 +4,23 @@
   "description": "A Javascript library that helps capturing screenshot on web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node scripts/build.js --minify",
+    "start": "concurrently \"node server/index.js\" \"node scripts/build.js --watch --bundle\"",
+    "postinstall": "npm run build"
   },
   "author": "hoseong.a.lee@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "html2canvas": "^1.4.1"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1"
+  },
+  "devDependencies": {
+    "css-tree": "^2.1.0",
+    "esbuild": "^0.14.42",
+    "esbuild-css-modules-plugin": "^2.2.16",
+    "express": "^4.18.1",
+    "express-es6-template-engine": "^2.2.3"
+  }
 }

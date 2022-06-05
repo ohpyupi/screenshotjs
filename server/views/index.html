@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Screenshot Demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body class="bg-dark text-white">
+        <div class="container px-5 w-100 h-100 d-flex flex-column justify-content-center">
+            <main>
+                <h1>Screenshot Demo</h1>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dui vel massa varius, sed bibendum neque fermentum. Morbi ultrices urna sed diam tincidunt, sit amet aliquet nisi egestas. Ut a vestibulum risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque est tortor, eget tempor est pulvinar ut. Aliquam vel sapien ut nisi vestibulum tempor. Curabitur euismod lacinia odio sit amet tempor.
+                </p>
+                <button id="capture" type="button" class="btn btn-light">Capture</button>
+            </main>
+        </div>
+        <script type="module">
+            import { capture, download } from "/dist/screenshot.js";
+            const button = document.getElementById("capture");
+            button.addEventListener("click", () => {
+                capture({
+                    onComplete(dataUrl) {
+                        download(dataUrl, "image-" + Date.now() + ".jpeg")
+                    },
+                    onError(err) {
+                        console.error(err);
+                    }
+                });
+            })
+        </script>
+    </body>
+</html>

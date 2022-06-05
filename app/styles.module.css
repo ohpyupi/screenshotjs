@@ -1,0 +1,11 @@
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    box-sizing: border-box;
+    border: 0 solid black;
+    opacity: 0.5;
+}

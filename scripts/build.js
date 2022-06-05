@@ -1,0 +1,18 @@
+const path = require('path');
+const esbuild = require('esbuild');
+const cssModulesPlugin = require('esbuild-css-modules-plugin');
+
+const args = process.argv.slice(2);
+
+esbuild.build({
+    logLevel: "info",
+    entryPoints: [path.join(__dirname, "../app/index.js")],
+    outfile: path.join(__dirname, "../dist/screenshot.js"),
+    bundle: args.includes("--bundle"),
+    watch: args.includes("--watch"),
+    minify: args.includes("--minify"),
+    format: "esm",
+    plugins: [
+        cssModulesPlugin(),
+    ],
+})
