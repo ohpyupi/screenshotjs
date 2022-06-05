@@ -1,13 +1,11 @@
 # Screenshot
-
----
 The module helps to take a screenshot in browsers.
 
-## Methods
----
-### capture(options) -> void
+## Demo
+![Screenshot Demo Gif](./demo.gif)
 
----
+## Methods
+### capture(options) -> void
 Allows users to select an area to be screenshotted.
 
 #### Parameters
@@ -16,8 +14,6 @@ Allows users to select an area to be screenshotted.
 | options.onComplete | (dataUrl) => void | A callback called when the area of screenshot is selected. |
 
 ### download(dataUrl, filename) -> void
-
----
 Downloads an image dataUrl to the local drive.
 
 #### Parameters
