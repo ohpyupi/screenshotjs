@@ -1,8 +1,13 @@
-# Screenshot
+# ScreenshotJS
 The module helps to take a screenshot in browsers.
 
 ## Demo
 ![Screenshot Demo Gif](./demo.gif)
+
+## Installation
+```bash
+npm install html2canvas screenshotjs -S
+```
 
 ## Methods
 ### capture(options) -> void
