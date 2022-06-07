@@ -53,7 +53,7 @@ export const capture = ({ onComplete, onError } = { onComplete: () => {}, onErro
       const left = Math.min(x, startX);
       const width = Math.abs(x - startX);
       const height = Math.abs(y - startY);
-      const canvas = await html2canvas(document.body);
+      const canvas = await html2canvas(document.body, { scale: 1 });
       const image = canvas.getContext('2d').getImageData(left, top, width, height);
       const croppedCanvas = document.createElement('canvas');
       croppedCanvas.width = width;

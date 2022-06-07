@@ -19,6 +19,7 @@
     "html2canvas": "^1.4.1"
   },
   "devDependencies": {
+    "concurrently": "^7.2.1",
     "css-tree": "^2.1.0",
     "esbuild": "^0.14.42",
     "esbuild-css-modules-plugin": "^2.2.16",
