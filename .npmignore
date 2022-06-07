@@ -1,3 +1,5 @@
 app/
 scripts/
 server/
+.idea/
+*.gif
