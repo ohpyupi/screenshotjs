@@ -6,7 +6,7 @@ The module helps to take a screenshot in browsers.
 
 ## Installation
 ```bash
-npm install html2canvas screenshotjs -S
+npm install html2canvas @ohpyupi/screenshotjs -S
 ```
 
 ## Methods

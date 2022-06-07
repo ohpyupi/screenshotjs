@@ -1,5 +1,5 @@
 {
-  "name": "screenshotjs",
+  "name": "@ohpyupi/screenshotjs",
   "version": "1.0.0",
   "description": "A Javascript library that helps capturing screenshot on web",
   "main": "dist/screenshot.js",
