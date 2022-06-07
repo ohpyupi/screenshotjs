@@ -1,6 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const express = require('express');
 const es6Renderer = require('express-es6-template-engine');
+
 const server = express();
 const PORT = 3000;
 
@@ -10,9 +12,10 @@ server.set('view engine', 'html');
 server.use('/dist', express.static(path.join(__dirname, '../dist')));
 
 server.get('/', (req, res) => {
-    res.render('index');
+  res.render('index');
 });
 
 server.listen(PORT, () => {
-    console.log(`Server started on port ${PORT}`);
-})
+  /* eslint-disable-next-line no-console */
+  console.log(`Server started on port ${PORT}`);
+});
