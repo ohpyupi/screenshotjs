@@ -1,6 +1,6 @@
 {
   "name": "@ohpyupi/screenshotjs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Javascript library that helps capturing screenshot on web",
   "main": "dist/screenshot.js",
   "scripts": {
@@ -28,5 +28,6 @@
     "eslint-plugin-import": "^2.26.0",
     "express": "^4.18.1",
     "express-es6-template-engine": "^2.2.3"
-  }
+  },
+  "keywords": ["screenshot", "capture"]
 }
