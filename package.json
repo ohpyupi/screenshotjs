@@ -1,7 +1,11 @@
 {
   "name": "@ohpyupi/screenshotjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Javascript library that helps capturing screenshot on web",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ohpyupi/screenshotjs.git"
+  },
   "main": "dist/screenshot.js",
   "scripts": {
     "lint": "eslint .",
