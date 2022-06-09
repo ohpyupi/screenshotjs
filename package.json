@@ -12,7 +12,7 @@
     "lint:fix": "npm run lint -- --fix",
     "build": "node scripts/build.js --minify",
     "start": "concurrently \"node server/index.js\" \"node scripts/build.js --watch --bundle\"",
-    "postinstall": "npm run build"
+    "publish:npm": "npm publish --access public"
   },
   "author": "hoseong.a.lee@gmail.com",
   "license": "MIT",
