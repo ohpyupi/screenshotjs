@@ -1,6 +1,6 @@
 {
   "name": "@ohpyupi/screenshotjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Javascript library that helps capturing screenshot on web",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "lint:fix": "npm run lint -- --fix",
     "build": "node scripts/build.js --minify",
     "start": "concurrently \"node server/index.js\" \"node scripts/build.js --watch --bundle\"",
-    "postinstall": "npm run build"
+    "publish:npm": "npm publish --access public"
   },
   "author": "hoseong.a.lee@gmail.com",
   "license": "MIT",
