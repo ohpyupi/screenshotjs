@@ -10,6 +10,7 @@ esbuild.build({
   entryPoints: [path.join(__dirname, '../app/index.js')],
   outfile: path.join(__dirname, '../dist/screenshot.js'),
   bundle: true,
+  external: ['html2canvas'],
   watch: args.includes('--watch'),
   minify: args.includes('--minify'),
   format: 'esm',
