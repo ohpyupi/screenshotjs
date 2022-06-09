@@ -11,8 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "build": "node scripts/build.js --minify",
-    "start": "concurrently \"node server/index.js\" \"node scripts/build.js --watch --bundle\"",
-    "postinstall": "npm run build"
+    "start": "concurrently \"node server/index.js\" \"node scripts/build.js --watch --bundle\""
   },
   "author": "hoseong.a.lee@gmail.com",
   "license": "MIT",
